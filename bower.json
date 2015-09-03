@@ -1,0 +1,24 @@
+{
+  "name": "flex-ui-navbar",
+  "version": "0.0.1",
+  "homepage": "https://github.com/flex-ui/navbar",
+  "authors": [
+    "Lado Lomidze <lado.lomidze@gmail.com>",
+    "Zura Gabievi <zura.gabievi@gmail.com>"
+  ],
+  "main": [
+    "navbar.css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "flex-ui-bootstrap": "~0.1.0",
+    "flex-ui-form": "*"
+  }
+}

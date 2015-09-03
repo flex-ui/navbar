@@ -1,0 +1,123 @@
+@import "bower_components/flex-ui-bootstrap/bootstrap";
+@import "bower_components/flex-ui-form/form";
+@import "bower_components/bem/scss/bem";
+
+@include b(navbar) {
+	font-family: 'Open Sans', Arial, sans-serif;
+	background-color: #fcfcfc;
+	position: relative;
+	@include clearfix;
+	min-height: 80px;
+
+	@include e(brand) {
+		text-transform: uppercase;
+		vertical-align: middle;
+		text-decoration: none;
+		display: inline-block;
+		font-size: rem(18px);
+		padding: 20px 1.5em;
+		font-weight: bold;
+		line-height: 40px;
+		color: #3399cc;
+	}
+
+	@include e(left) {
+		float: left;
+	}
+
+	@include e(right) {
+		margin-right: 1.5em;
+		float: right;
+	}
+
+	@include e(list) {
+		vertical-align: middle;
+		display: inline-block;
+		list-style-type: none;
+	}
+
+	@include e(item) {
+		vertical-align: middle;
+		display: inline-block;
+		line-height: 40px;
+		padding: 20px 0;
+
+		@include duo {
+			margin-left: -4px;
+		}
+	}
+
+	@include e(link) {
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: rem(11px);
+		padding: 0 1em;
+		display: block;
+		color: #a0a0a0;
+
+		@include hover {
+			color: #3399cc;
+		}
+
+		@include m(tiny) {
+			font-size: rem(15px);
+			padding: 0 0.5em;
+		}
+
+		@include m(disc) {
+			background-color: #3399cc;
+			font-size: rem(11px);
+			border-radius: 100%;
+			text-align: center;
+			line-height: 30px;
+			overflow: hidden;
+			margin: 0 0.3em;
+			color: white;
+			height: 30px;
+			width: 30px;
+			padding: 0;
+
+			@include hover {
+				color: #f0f0f0;
+			}
+		}
+	}
+
+	@include e(form) {
+		vertical-align: middle;
+		display: inline-block;
+	}
+
+	@include m(inverse) {
+		background-color: #090f13;
+
+		@include e(brand) {
+			color: #d0d0d0;
+		}
+
+		@include e(item) {
+			@include is(active) {
+				@include e(link) {
+					color: #d0d0d0;
+				}
+			}
+		}
+
+		@include e(link) {
+			color: #374148;
+
+			@include hover {
+				color: #d0d0d0;
+			}
+
+			@include m(disc) {
+				background-color: #374148;
+				color: #090f13;
+
+				@include hover {
+					color: #122229;
+				}
+			}
+		}
+	}
+}
