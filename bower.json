@@ -18,7 +18,7 @@
     "tests"
   ],
   "dependencies": {
-    "flex-ui-bootstrap": "~0.1.0",
+    "flex-ui-bootstrap": "*",
     "flex-ui-form": "*"
   }
 }

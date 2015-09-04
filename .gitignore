@@ -4,4 +4,4 @@
 .sass-cache
 bower_components
 *.map
-*.html
+package.json
